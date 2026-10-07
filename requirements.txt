@@ -1,0 +1,25 @@
+# AI Human Voice Conversation — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# ── TTS engine ────────────────────────────────────────────────────────
+edge-tts>=6.1.9            # Microsoft Edge neural TTS (free, no API key)
+
+# ── Audio processing ──────────────────────────────────────────────────
+pydub>=0.25.1              # Audio segment manipulation + MP3/WAV export
+pygame>=2.5.0              # Audio playback (mixer)
+
+# ── Audio metadata ────────────────────────────────────────────────────
+mutagen>=1.47.0            # Read audio file duration/metadata
+
+# ── Environment / configuration ───────────────────────────────────────
+python-dotenv>=1.0.0       # Load .env files
+
+# ── Testing ───────────────────────────────────────────────────────────
+pytest>=7.4.0
+
+# ── Notes ─────────────────────────────────────────────────────────────
+# pydub requires ffmpeg for MP3 encoding.
+# Install ffmpeg separately:
+#   Windows : https://ffmpeg.org/download.html  (add to PATH)
+#   macOS   : brew install ffmpeg
+#   Linux   : sudo apt install ffmpeg

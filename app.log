@@ -1,0 +1,76 @@
+2026-09-24 09:33:49,205 [INFO] __main__: Starting AI Human Voice Conversation v1.0.0
+2026-09-24 09:33:50,565 [INFO] database.database: Database initialised at C:\Users\Admin\Desktop\ai_human_voice_clean\data\app.db
+2026-09-24 09:34:00,865 [INFO] services.audio_service: pygame mixer initialised
+2026-09-24 09:37:07,014 [INFO] app.gui: Starting generation: 14 chunk(s), voice=en-IN-NeerjaNeural, speed=1.0
+2026-09-24 09:37:07,517 [INFO] services.tts_service: Synthesising chunk 1/14 (29 chars)
+2026-09-24 09:37:31,481 [INFO] services.tts_service: Synthesising chunk 2/14 (22 chars)
+2026-09-24 09:37:33,205 [INFO] services.tts_service: Synthesising chunk 3/14 (161 chars)
+2026-09-24 09:37:36,071 [INFO] services.tts_service: Synthesising chunk 4/14 (37 chars)
+2026-09-24 09:37:38,467 [INFO] services.tts_service: Synthesising chunk 5/14 (59 chars)
+2026-09-24 09:37:40,428 [INFO] services.tts_service: Synthesising chunk 6/14 (246 chars)
+2026-09-24 09:37:44,322 [INFO] services.tts_service: Synthesising chunk 7/14 (52 chars)
+2026-09-24 09:37:46,413 [INFO] services.tts_service: Synthesising chunk 8/14 (22 chars)
+2026-09-24 09:37:48,439 [INFO] services.tts_service: Synthesising chunk 9/14 (83 chars)
+2026-09-24 09:37:50,233 [INFO] services.tts_service: Synthesising chunk 10/14 (36 chars)
+2026-09-24 09:37:52,128 [INFO] services.tts_service: Synthesising chunk 11/14 (177 chars)
+2026-09-24 09:37:54,834 [INFO] services.tts_service: Synthesising chunk 12/14 (155 chars)
+2026-09-24 09:38:00,092 [INFO] services.tts_service: Synthesising chunk 13/14 (154 chars)
+2026-09-24 09:38:03,697 [INFO] services.tts_service: Synthesising chunk 14/14 (101 chars)
+2026-09-24 09:38:07,699 [ERROR] app.gui: Generation failed
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\ai_human_voice_clean\app\gui.py", line 558, in _worker_generate
+    combined  = self._audio.combine_chunks(chunk_paths, tmp_path)
+  File "C:\Users\Admin\Desktop\ai_human_voice_clean\services\audio_service.py", line 52, in combine_chunks
+    return self._combine_with_pydub(chunk_paths, output_path, progress_callback)
+  File "C:\Users\Admin\Desktop\ai_human_voice_clean\services\audio_service.py", line 70, in _combine_with_pydub
+    seg = AudioSegment.from_mp3(str(path))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\pydub\audio_segment.py", line 796, in from_mp3
+    return cls.from_file(file, 'mp3', parameters=parameters)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\pydub\audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\pydub\utils.py", line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1456, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2026-09-24 10:08:59,452 [INFO] __main__: Starting AI Human Voice Conversation v1.0.0
+2026-09-24 10:08:59,780 [INFO] database.database: Database initialised at C:\Users\Admin\Desktop\ai_human_voice_clean\data\app.db
+2026-09-24 10:09:02,526 [INFO] services.audio_service: pygame mixer initialised
+2026-09-24 10:09:28,623 [INFO] app.gui: Starting generation: 13 chunk(s), voice=en-US-JennyNeural, speed=1.0
+2026-09-24 10:09:28,626 [INFO] services.tts_service: Synthesising chunk 1/13 (22 chars)
+2026-09-24 10:09:31,769 [INFO] services.tts_service: Synthesising chunk 2/13 (161 chars)
+2026-09-24 10:09:35,166 [INFO] services.tts_service: Synthesising chunk 3/13 (37 chars)
+2026-09-24 10:09:36,932 [INFO] services.tts_service: Synthesising chunk 4/13 (59 chars)
+2026-09-24 10:09:38,871 [INFO] services.tts_service: Synthesising chunk 5/13 (246 chars)
+2026-09-24 10:09:41,575 [INFO] services.tts_service: Synthesising chunk 6/13 (52 chars)
+2026-09-24 10:09:43,210 [INFO] services.tts_service: Synthesising chunk 7/13 (22 chars)
+2026-09-24 10:09:44,726 [INFO] services.tts_service: Synthesising chunk 8/13 (83 chars)
+2026-09-24 10:09:46,534 [INFO] services.tts_service: Synthesising chunk 9/13 (36 chars)
+2026-09-24 10:09:48,284 [INFO] services.tts_service: Synthesising chunk 10/13 (177 chars)
+2026-09-24 10:09:51,493 [INFO] services.tts_service: Synthesising chunk 11/13 (155 chars)
+2026-09-24 10:09:53,420 [INFO] services.tts_service: Synthesising chunk 12/13 (154 chars)
+2026-09-24 10:09:55,848 [INFO] services.tts_service: Synthesising chunk 13/13 (101 chars)
+2026-09-24 10:09:58,812 [ERROR] app.gui: Generation failed
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\ai_human_voice_clean\app\gui.py", line 558, in _worker_generate
+    combined  = self._audio.combine_chunks(chunk_paths, tmp_path)
+  File "C:\Users\Admin\Desktop\ai_human_voice_clean\services\audio_service.py", line 52, in combine_chunks
+    return self._combine_with_pydub(chunk_paths, output_path, progress_callback)
+  File "C:\Users\Admin\Desktop\ai_human_voice_clean\services\audio_service.py", line 70, in _combine_with_pydub
+    seg = AudioSegment.from_mp3(str(path))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\pydub\audio_segment.py", line 796, in from_mp3
+    return cls.from_file(file, 'mp3', parameters=parameters)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\pydub\audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\pydub\utils.py", line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1456, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2026-09-24 10:10:15,931 [INFO] services.audio_service: pygame mixer released
+2026-09-24 10:10:15,932 [INFO] app.gui: Application closed
+2026-09-24 10:10:16,124 [INFO] __main__: Application exited cleanly.
